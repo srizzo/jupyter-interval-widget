@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "jupyter-interval-widget/extension": true
+  }
+}

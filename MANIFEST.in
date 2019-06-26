@@ -1,0 +1,2 @@
+recursive-include jupyter_interval_widget/static *.*
+include jupyter-interval-widget.json
