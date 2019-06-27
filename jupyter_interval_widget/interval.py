@@ -8,8 +8,8 @@ class Interval(widgets.DOMWidget):
     _model_name = Unicode('IntervalModel').tag(sync=True)
     _view_module = Unicode('jupyter-interval-widget').tag(sync=True)
     _model_module = Unicode('jupyter-interval-widget').tag(sync=True)
-    _view_module_version = Unicode('^0.1.0').tag(sync=True)
-    _model_module_version = Unicode('^0.1.0').tag(sync=True)
+    _view_module_version = Unicode('^0.1.1').tag(sync=True)
+    _model_module_version = Unicode('^0.1.1').tag(sync=True)
     value = Int(1000, allow_none=True).tag(sync=True)
 
     def __init__(self, **kwargs):

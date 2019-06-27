@@ -23,8 +23,8 @@ var IntervalModel = widgets.DOMWidgetModel.extend({
         _view_name : 'IntervalView',
         _model_module : 'jupyter-interval-widget',
         _view_module : 'jupyter-interval-widget',
-        _model_module_version : '0.1.0',
-        _view_module_version : '0.1.0',
+        _model_module_version : '0.1.1',
+        _view_module_version : '0.1.1',
         value : 1000
     })
 });
@@ -51,6 +51,7 @@ var IntervalView = widgets.DOMWidgetView.extend({
         clearInterval(this.interval);
 
         if (value){
+            that.send({event: 'tick'});
             this.interval = setInterval(function() {
                 that.send({event: 'tick'});
             }, value);

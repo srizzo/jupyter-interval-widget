@@ -1,6 +1,6 @@
 {
   "name": "jupyter-interval-widget",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Jupyter Interval Widget",
   "author": "Samuel Rizzo",
   "main": "lib/index.js",
